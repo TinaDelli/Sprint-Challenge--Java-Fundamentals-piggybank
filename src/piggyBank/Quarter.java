@@ -11,6 +11,10 @@ public class Quarter extends AbstractCollection
         this.name = name;
         this.worth = worth;
     }
+    public void totalAmt(Double worth, int amt)
+    {
+     this.worth = amt * worth;
+    }
 
     @Override
     public String getName()
@@ -23,6 +27,7 @@ public class Quarter extends AbstractCollection
     {
         return worth;
     }
+    
 
     @Override
     public String toString()

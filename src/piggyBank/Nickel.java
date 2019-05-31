@@ -12,6 +12,11 @@ public class Nickel extends AbstractCollection
         this.worth = worth;
     }
 
+    public void totalAmt(Double worth, int amt)
+    {
+     this.worth = amt * worth;
+    }
+
     @Override
     public String getName()
     {

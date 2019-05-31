@@ -12,6 +12,11 @@ public class Penny extends AbstractCollection
         this.worth = worth;
     }
 
+    public void totalAmt(Double worth, int amt)
+    {
+     this.worth = amt * worth;
+    }
+
     @Override
     public String getName()
     {
@@ -23,6 +28,7 @@ public class Penny extends AbstractCollection
     {
         return worth;
     }
+    
 
     @Override
     public String toString()
