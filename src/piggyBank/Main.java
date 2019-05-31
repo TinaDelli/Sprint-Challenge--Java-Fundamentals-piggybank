@@ -49,5 +49,15 @@ public class Main
         System.out.println();
         System.out.println("The piggy bank holds " + fp.format(total));
 
+        //Removing Coins
+        dollars.removeCoin(1);
+        dollars.totalAmt(1.00, 4);
+        double newTotal = 0;
+        for(AbstractCollection s : myList)
+        {
+            newTotal += s.getWorth();
+        }
+        System.out.println();
+        System.out.println("The piggy Bank now holds " + fp.format(newTotal));
     }
 }
